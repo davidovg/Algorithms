@@ -9,7 +9,7 @@
 
 #forms a row for an event of type evntty that occurs at time evnttm
 #appin is optional set of application-specific traits of the event
-evntrow <- function(evnntm, evnnty, appin = NULL) {
+evntrow <- function(evnttm, evntty, appin = NULL) {
   rw <- c(list(evnttime=evnttm,evnttype=evntty),appin)
   return(as.data.frame(rw))
 }
